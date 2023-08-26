@@ -1,9 +1,9 @@
 return { 
     {
-        "christianchiarulli/vscode-easymotion",
+        'folke/which-key.nvim',
     },
     {
-        'folke/which-key.nvim',
+	'ggandor/leap.nvim',
     },
     {
 	'mg979/vim-visual-multi',
