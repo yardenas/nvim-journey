@@ -1,0 +1,25 @@
+unbind C-o            # removes prefix version
+unbind -n C-o          # removes any existing global
+unbind -n C-O          # (safety)
+set -g status-position top
+set-option -g status on
+set-option -g status-interval 1
+set-option -g status-justify "left"
+set-option -g status-left-length 60
+set-option -g status-right-length 90
+set -g window-status-separator ''
+set-window-option -g window-status-current-format "#[fg=colour255, bg=colour38]| #I • #W |"
+set-window-option -g window-status-format "#[fg=colour254, bg=colour30]| #I • #W |"
+set -g status-bg default
+bind-key -n C-e split-window -h
+bind-key -n S-Left resize-pane -L 3
+bind-key -n S-Right resize-pane -R 3
+bind-key -n S-Up resize-pane -U 3
+bind-key -n S-Down resize-pane -D 3
+bind -n C-o split-window -v
+# move panes without prefix
+bind -n C-h select-pane -L
+bind -n C-l select-pane -R
+bind -n C-k select-pane -U
+bind -n C-j select-pane -D
+bind -n C-z resize-pane -Z
