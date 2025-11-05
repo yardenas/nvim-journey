@@ -159,7 +159,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "cmd+i",
+    "key": "ctrl+shift+i",
     "command": "editor.action.formatDocument",
     "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
   },
@@ -202,6 +202,16 @@
     "key": "shift+cmd+i",
     "command": "-workbench.action.chat.openagent",
     "when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "workbench.action.increaseViewSize",
+    "when": "editorTextFocus || terminalFocus || sideBarFocus || panelFocus"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "workbench.action.decreaseViewSize",
+    "when": "editorTextFocus || terminalFocus || sideBarFocus || panelFocus"
   }
 ]
 
