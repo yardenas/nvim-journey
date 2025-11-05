@@ -47,7 +47,7 @@
   },
   {
     "key": "ctrl+j",
-    "command": "workbench.action.quickOpenNavigateNext",
+    "command": "workbench.action.quickOpenSelectNext",
     "when": "inQuickOpen"
   },
   {
@@ -77,7 +77,7 @@
   },
   {
     "key": "ctrl+k",
-    "command": "workbench.action.quickOpenNavigatePrevious",
+    "command": "workbench.action.quickOpenSelectPrevious",
     "when": "inQuickOpen"
   },
   {
