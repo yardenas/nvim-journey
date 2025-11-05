@@ -212,6 +212,10 @@
     "key": "ctrl+-",
     "command": "workbench.action.decreaseViewSize",
     "when": "editorTextFocus || terminalFocus || sideBarFocus || panelFocus"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "workbench.action.toggleMaximizeEditorGroup"
   }
 ]
 
