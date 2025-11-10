@@ -123,12 +123,11 @@
   {
     "key": "ctrl+k",
     "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
+    "when": "terminalFocus | panelFocus"
   },
   {
     "key": "ctrl+shift+j",
     "command": "workbench.action.toggleMaximizedPanel",
-    "when": "terminalFocus"
   },
   {
     "key": "ctrl+shift+t",
@@ -216,6 +215,29 @@
   {
     "key": "ctrl+shift+enter",
     "command": "workbench.action.toggleMaximizeEditorGroup"
+  },
+  {
+    "key": "f2",
+    "command": "-workbench.action.chat.renameSession",
+    "when": "focusedView == 'workbench.view.chat.sessions.local'"
+  },
+  {
+    "key": "f2",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "f2",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+y",
+    "command": "workbench.debug.action.toggleRepl"
+  },
+  {
+    "key": "cmd+shift+y",
+    "command": "-workbench.debug.action.toggleRepl"
   }
 ]
 
