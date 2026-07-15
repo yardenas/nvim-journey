@@ -7,7 +7,7 @@ return {
         end
     },
     {
-        'ggandor/leap.nvim'
+        'https://codeberg.org/andyg/leap.nvim'
     },
     {
         'numToStr/Comment.nvim',
